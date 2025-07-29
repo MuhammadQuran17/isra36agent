@@ -1,5 +1,5 @@
 # isra36agent
-AI Agent that automatically rechecks AI generated code in isolated test environment
+AI Agent that automatically rechecks AI generated SQL in isolated test environment
 
 You can import `isra36_n8nAgent.json` file into your n8n. 
 It is an embedded chat for the isra36 website, but you can pin input data and run it on your own n8n instance.
