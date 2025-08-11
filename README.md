@@ -52,8 +52,6 @@ To customize the logic for other programming languages:
 3. Update the `GenerateErrorPrompt` node's `prompt` parameter to generate code specific to your target language or framework.
 
 
-*Any workflows built on top of this must credit the original author and be released under an open-source license.*
-
 ## What's Next
 
 1. Make sure that the AI **truly understands** your complex task. A strategy from Dale Carnegie: don't ask if someone understood you or not; rather, ask them to retell it in their own words. Then, approve or correct according to Ai's retell of your task. Only after this validation, pass the idea to the model for code generation. Separate code generation and understanding the problem.
