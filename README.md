@@ -1,4 +1,7 @@
 # isra36agent
+
+### This is the core of isra36.com agent. It is not fully open-source. To fully use it please wait 5,6 days until isra36 goes into production.
+
 AI Agent that automatically rechecks AI generated SQL in isolated test environment
 
 It’s built on N8N, and to use it, simply import the `isra36_n8nAgent.json` file.
