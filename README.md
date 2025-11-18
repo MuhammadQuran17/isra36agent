@@ -32,7 +32,7 @@ It is an embedded chat for the website, but you can pin input data and run it on
 Make sure to fill in your credentials:
 
 1. Your OpenAI or OpenRouter API key
-2. Access to a local PostgreSQL database for test execution
+2. Access to a local PostgreSQL / (MySQL will be available in isra36 website) database for test execution
 
 You can view your generated tables using your preferred PostgreSQL GUI. We recommend **DBeaver**.
 Alternatively, you can activate the **“Deactivated DB Visualization”** nodes below. To use them, connect each to the most recent successful **Set** node and manually adjust the output.
