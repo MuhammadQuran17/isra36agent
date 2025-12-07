@@ -1,10 +1,10 @@
 # isra36agent
 
-### This is the core of isra36.com agent. It is not fully open-source. To fully use it please wait 5,6 days until isra36 goes into production.
+### This is the core agent. To fully use it please visit [isra36.com](https://isra36.com).
 
-AI Agent that automatically rechecks AI generated SQL in isolated test environment
+AI Agent that automatically rechecks AI generated SQL in isolated test environment.
 
-It’s built on N8N, and to use it, simply import the `isra36_n8nAgent.json` file.
+It’s built on N8N, import the `isra36_n8nAgent.json` file.
 [Offical page of isra36 agent in n8n](https://n8n.io/workflows/6583-generate-and-test-sql-code-with-gptopenrouter-ai-and-postgresql-sandbox/)
 
 Don't trust complex AI-generated SQL queries without double-checking them in a safe environment. That's where isra36 comes in. It automatically creates a test environment with the necessary data, generates code for your task, runs it to double-check for correctness, and handles errors if necessary.
