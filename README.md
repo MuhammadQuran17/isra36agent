@@ -1,6 +1,8 @@
 # isra36agent
 
-### This is the core agent. To fully use it please visit [isra36.com](https://isra36.com).
+### This is the core agent of isra36. To fully use it please visit [isra36.com](https://isra36.com).
+
+> This agent was open-sourced for educational purposes, specifically for n8n developers who want to take a peek at ready-to-use solutions. It is not easy to setup it, for SQL double-checking.     
 
 AI Agent that automatically rechecks AI generated SQL in isolated test environment.
 
