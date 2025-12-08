@@ -34,9 +34,9 @@ It is an embedded chat for the website, but you can pin input data and run it on
 Make sure to fill in your credentials:
 
 1. Your OpenAI or OpenRouter API key
-2. Access to a local PostgreSQL / (MySQL will be available in isra36 website) database for test execution
+2. Access to a local PostgreSQL / MySQL database for test execution
 
-You can view your generated tables using your preferred PostgreSQL GUI. We recommend **DBeaver**.
+You can view your generated tables using your preferred SQL GUI. We recommend **DBeaver**.
 Alternatively, you can activate the **“Deactivated DB Visualization”** nodes below. To use them, connect each to the most recent successful **Set** node and manually adjust the output.
 However, the easiest and most efficient method is to use a GUI.
 
@@ -45,15 +45,15 @@ However, the easiest and most efficient method is to use a GUI.
 1. We store all input values in the `localVariables` node. Please use this node to *get* the necessary data.
 2. `OpenAI` has a built-in assistant that manages chat history on their side. For OpenRouter, we handle chat history locally. That’s why we use separate nodes like `ifOpenAi` and `isOpenAi`. Note that `if` logic can also be used *inside* nodes.
 3. The `AutoErrorFixing` loop will run only a limited number of times, as defined by the `isMaxAutoErrorReached` node. This prevents infinite loops.
-4. The `Execute_AI_result` node connects to the PostgreSQL test database used to execute queries.
+4. The `Execute_AI_result` node connects to the SQL test database used to execute queries.
 
 ## Guidance on customization
 
-This setup is built for **PostgreSQL**, but it can be adapted to any **programming language**, and the logic can be extended to any **programming framework**.
+This setup is built for **PostgreSQL/MySQL**, but it can be adapted to any **programming language**, and the logic can be extended to any **programming framework**.
 
 To customize the logic for other programming languages:
 1. Change `instruction` parameter in `localVariables` node.
-2. Replace the `Execute_AI_result` PostgreSQL node with another executable node. For example, you can use the HTTP Request node.
+2. Replace the `Execute_AI_result` SQL node with another executable node. For example, you can use the HTTP Request node.
 3. Update the `GenerateErrorPrompt` node's `prompt` parameter to generate code specific to your target language or framework.
 
 
