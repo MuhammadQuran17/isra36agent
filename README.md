@@ -1,16 +1,16 @@
-# isra36agent
+# QueryVerify Agent
 
-### This is the core agent of isra36. To fully use it please visit [isra36.com](https://isra36.com).
+### This is the core agent of queryverify. To fully use it please visit [queryverify.com](https://queryverify.com).
 
 > IMPORTANT: This agent was open-sourced for educational purposes, specifically for n8n developers who want to take a peek at ready-to-use solutions. It is not easy to setup it for SQL double-checking. And it is only one part of the double-checking process; a lot of things were done on the other services      
 
 AI Agent that automatically rechecks AI generated SQL in isolated test environment.
 
 It’s built on N8N, import the `isra36_n8nAgent.json` file.
-[Offical page of isra36 agent in n8n](https://n8n.io/workflows/6583-generate-and-test-sql-code-with-gptopenrouter-ai-and-postgresql-sandbox/)
+[Offical page of queryverify agent in n8n](https://n8n.io/workflows/6583-generate-and-test-sql-code-with-gptopenrouter-ai-and-postgresql-sandbox/)
 
-Don't trust complex AI-generated SQL queries without double-checking them in a safe environment. That's where isra36 comes in. It automatically creates a test environment with the necessary data, generates code for your task, runs it to double-check for correctness, and handles errors if necessary.
-If you enable auto-fixing, isra36 will detect and fix issues on its own. If not, it will ask for your permission before making changes during debugging. In the end, you get thoroughly verified code along with full details about the environment it ran in.
+Don't trust complex AI-generated SQL queries without double-checking them in a safe environment. That's where queryverify comes in. It automatically creates a test environment with the necessary data, generates code for your task, runs it to double-check for correctness, and handles errors if necessary.
+If you enable auto-fixing, queryverify will detect and fix issues on its own. If not, it will ask for your permission before making changes during debugging. In the end, you get thoroughly verified code along with full details about the environment it ran in.
 
 
 ## Setup
